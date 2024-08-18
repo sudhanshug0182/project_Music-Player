@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Musicplayer.css"></style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/07bece4152.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div  id ="header">
+        <h1>Music Player</h1>
+        <input type="checkbox" class="check">
+        <div id ="searching">
+            <div class="seach-bar">
+                <span><input type="text" placeholder="search for song.." id="song_input"> <i class="fa-solid fa-magnifying-glass" id="song_search_icon"></i></span>
+            </div>
+            <div class="seach-bar">
+                <span><input type="text" placeholder="search for playlist.." id="playlist_input"> <i class="fa-solid fa-magnifying-glass" id="playlist_search_icon"></i></span>
+            </div>
+
+        </div>
+    </div>
+    <div id="Container">    
+        <div id ="All-songs">
+            <div id = "Filter-sec">
+                <h2>Filter by Genre: </h2>
+                <select id ="flt">
+                </select>
+            </div>
+            <div><h2>All Songs</h2></div>   
+            <div id = "song-lst">
+            </div>
+        </div>
+        <div id="Card">
+            <div id = "song-container">
+                <div id = "img">
+                    <img src="Rcity.jpg" width="100%"  id="image" height="220px"> 
+                </div>
+                <h2 id ="songname">Shape Of U</h2>
+                <p id="author">Edshreen</p>
+            </div>
+            <audio controls id = "songlink">
+                <source src="[iSongs.info] 04 - Hukum.mp3" type="audio/ogg" >
+            </audio>
+            <div id="controls">
+                <button id="prev"><i class="fa-solid fa-backward"></i></button>
+                <button id="next"><i class="fa-solid fa-forward"></i></button>
+            </div>
+            <button class="add_btn">Add to </br>Playlist</button>
+            
+        </div> 
+        <div id = "Playlist-sec">
+            <div id = "playlist-creation">
+                <input type="text" placeholder="Enter Playlist name" id = "input">
+                <label id ="lbl"> create playlist</label>
+            </div>
+            <div id="Playlist">
+                <h2>Current Playlist</h2>
+                <div id="Current">
+                </div>
+                <h2>All Playlist</h2>
+                <div id ="All">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="MusicPlayer.js"></script>
+</body>
+</html>
